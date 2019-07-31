@@ -5,11 +5,11 @@ export function SimonGame(maxdiff) {
     this.levels = [];
     this.notes = ["Abutton", "Down", "Left", "Right", "Up"];
     this.smalls = [
-"<img src='./media/A.png' class='small'>",
-"<img src='./media/cdown.png' class='small'>",
-"<img src='./media/cleft.png' class='small'>",
-"<img src='./media/cup.png'  class=' small'>",
-"<img src='./media/cright.png' class='small'>"
+"<img src='./media/A.png' class='smallA'>",
+"<img src='./media/cdownsmall.png' class='small'></img>",
+"<img src='./media/cleftsmall.png' class='small'></img>",
+"<img src='./media/crightsmall.png' class='small'></img>",
+"<img src='./media/cupsmall.png'  class=' small'></img>"
 ];
 }
 
@@ -58,4 +58,4 @@ SimonGame.prototype.AddInstrument = function () {
             };
         });
     });
-}
+}   

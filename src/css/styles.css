@@ -109,9 +109,18 @@
 }
 
 .small{
-height:50px;
- width: 50px;
+    height:50px;
+
+    float:left;
 }
+.smallA{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+    height:40px;
+     width: 20px;
+     margin-top: 20px;
+    }
 .smallbox{
     min-height: 50px;
     min-width: 30px;
@@ -123,4 +132,9 @@ height:50px;
     border: 1px solid;
     border-radius: 10px;
     box-shadow: -2px -2px 1px darkseagreen, -4px -4px 1px black;
+display: flex;
+}
+.smallAcontainer{
+    height:50px;
+    width: 50px;
 }
