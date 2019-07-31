@@ -1,0 +1,43 @@
+{
+  "name": "do-what-i-say-or-else",
+  "version": "1.0.0",
+  "description": "The world depends on you pressing these buttons in the right order.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
+    "lint": "eslint src/js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riverface/Simon.git"
+  },
+  "keywords": [
+    "Simon"
+  ],
+  "author": "Riverface",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^3.0.0",
+    "eslint": "^4.18.2",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.0.6",
+    "style-loader": "^0.20.2",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Riverface/Simon/issues"
+  },
+  "homepage": "https://github.com/Riverface/Simon#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}

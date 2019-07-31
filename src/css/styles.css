@@ -1,0 +1,126 @@
+.center {
+    width: 300px;
+    height: 300px;
+    left: 60%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    position: absolute;
+}
+
+.pad {
+    border: 1px solid;
+    border-radius: 200px;
+    background-color: lightgrey;
+    box-shadow: -10px -20px 1px darkgrey, -12px -22px 1px black;
+}
+
+.butt {
+    height: 100px;
+    width: 100px;
+    background-blend-mode: darken;
+    z-index: 1000;
+    border: 1px hidden;
+    border-radius: 50px;
+}
+
+#Left {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 28%;
+    top: 36%;
+}
+
+#Right {
+    height: 100px;
+    width: 100px;
+    top: 36%;
+    left: 88%;
+    position: absolute;
+}
+
+#Up {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 58%;
+    top: 6%;
+}
+
+#Down {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 58%;
+    top: 66%;
+}
+
+.instrument {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+}
+
+#Abutton {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 75%;
+    left: 25%;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 200px;
+    background-color: lightblue;
+    box-shadow: -10px -10px 1px #68828a, -13px -13px 1px black;
+}
+
+#Abuttonimg {
+    height: 200px;
+    width: 200px;
+}
+
+#Abuttonpressedimg {
+    height: 200px;
+    width: 200px;
+}
+
+.noselect {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.interface {
+    position: absolute;
+    border: 1px solid;
+    border-radius: 50px;
+    height: 500px;
+    width: 750px;
+    left: 5%;
+    top: 20%;
+    background-color: lightgreen;
+    z-index: -1500;
+    box-shadow: -10px -10px 1px darkseagreen, -11px -11px 1px black;
+}
+
+.small{
+height:50px;
+ width: 50px;
+}
+.smallbox{
+    min-height: 50px;
+    min-width: 30px;
+    padding: 10px;
+    left: 10%;
+    top: 10%;
+    position: absolute;
+    background-color: lightgreen;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: -2px -2px 1px darkseagreen, -4px -4px 1px black;
+}
