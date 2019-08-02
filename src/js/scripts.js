@@ -22,10 +22,18 @@ import './../media/Up.wav'
 import './../media/Wrong.wav'
 import './../media/silence.wav'
 import './../css/styles.css';
+import './../media/Correct.wav';
+import './../media/Win.mp3';
+import './../media/Lose.mp3';
+import './../media/heartempty.png';
+import './../media/heartfull.png';
+import './../media/youngdeath.wav';
+import './../media/adultdeath.wav';
 import {SimonGame, Player} from './Simon.js';
 $(document).ready(function () {
     $("#played").hide();
-var simon = new SimonGame(3);
-simon.AddInstrument();
+var simon = new SimonGame($("#Startdiff").val(),$("#Maxdiff").val());
+
+simon.Initialize();
 });
 

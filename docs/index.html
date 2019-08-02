@@ -10,7 +10,15 @@
  
   <script type="text/javascript" src="bundle.js"></script></head>
   <body></body>
-    <div></body>
+  <div>
+    <div class='heartcontainers'>
+
+      <div class='emptyheart' id='heart1'></div>
+      <div class='emptyheart' id='heart2'></div>
+      <div class='emptyheart' id='heart3'></div>
+    </div>
+  </div>
+  <div></body>
 </body>
 <div>
     <audio src="./media/silence.wav" id='buffer'></audio>  
@@ -18,6 +26,7 @@
     
   </div>
 </div>
+
 <div class='interface'>
 <img src="./media/cpad.png"  class='center noselect pad'>
 <img src="./media/cdown.png" id='Downimg' class='center noselect'>
@@ -41,12 +50,27 @@
   <audio src="./media/Right.wav" id='Rightwav'></audio>
 
   <audio src="./media/Wrong.wav" id='Wrong'></audio>    
-  </div>
+  <audio src="./media/Correct.wav" id='Correct'></audio> 
+  <audio src="./media/Win.mp3" id='Win'></audio>    
+  <audio src="./media/Lose.mp3" id='Lose'></audio> 
+  <audio src="./media/adultdeath.wav" id='adultdeath'></audio>
+  <audio src="./media/youngdeath.wav" id='youngdeath'></audio>
+</div>
+
   <div id='Abutton' class=' center butt noselect'>
       <img src="./media/A.png" class='noselect'  id='Abuttonimg' alt="">
       <img src="./media/Apress.png" hidden class='noselect'  id='Abuttonpressedimg' alt="">
+    </div>
   </div>
-</div>
+        <div id='gamemenu'>
+          <button class='btn noselect' id='gamestarter'>Start Game</button>
+
+          <input type="number" title="starting difficulty" class='btn noselect' id='Startdiff' value="1"></button>
+
+          <input type="number" class='btn noselect' title="Maximum difficulty" id='Maxdiff' value = "24"></button> 
+        </div>  
+        
+<div id='soundqueue'></div>
 
 
 </body>

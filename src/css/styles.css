@@ -19,7 +19,7 @@
     height: 100px;
     width: 100px;
     background-blend-mode: darken;
-    z-index: 1000;
+    z-index: 100;
     border: 1px hidden;
     border-radius: 50px;
 }
@@ -85,8 +85,26 @@
     height: 200px;
     width: 200px;
 }
-
+.noselect:focus{
+    outline: none;
+}
+.noselect:active{
+    outline: none;
+}
+.noselect:enabled{
+    outline: none;
+}
+.noselect:target{
+    outline: none;
+}
+.noselect:hover{
+    outline: none;
+}
+.noselect:checked{
+    outline: none;
+}
 .noselect {
+    outline: none;
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -104,37 +122,151 @@
     left: 5%;
     top: 20%;
     background-color: lightgreen;
-    z-index: -1500;
+    z-index: -100;
     box-shadow: -10px -10px 1px darkseagreen, -11px -11px 1px black;
 }
 
 .small{
     height:50px;
-
+    margin-left: 10px;
     float:left;
 }
 .smallA{
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right:10px;
-    height:40px;
-     width: 20px;
-     margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 5px;
+    height:30px;
+     width: 30px;
+     margin-top: 35px;
     }
 .smallbox{
-    min-height: 50px;
+    min-height: 100px;
     min-width: 30px;
     padding: 10px;
-    left: 10%;
-    top: 10%;
+    left: 7.5%;
+    top: 8.6%;
     position: absolute;
     background-color: lightgreen;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: -2px -2px 1px darkseagreen, -4px -4px 1px black;
 display: flex;
 }
 .smallAcontainer{
     height:50px;
-    width: 50px;
+    width: 10px;
+}
+
+@keyframes failure{
+0%{
+    transform: translate(0px, 0px);
+}
+25%{
+    transform: translate(20px, -100px);
+}
+    100%{
+  transform: translate(-1000px, 1000px);  
+}
+
+}
+
+
+@keyframes failure2{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(-50px, -100px);
+    }
+        100%{
+      transform: translate(10px, 1000px);  
+    }
+    
+    }
+    @keyframes failure2{
+        0%{
+            transform: translate(0px, 0px);
+        }
+        25%{
+            transform: translate(50px, -100px);
+        }
+            100%{
+          transform: translate(-30px, 1000px);  
+        }
+        
+        }
+        
+    @keyframes failure3{
+        0%{
+            transform: translate(0px, 0px);
+        }
+        25%{
+            transform: translate(-50px, -100px);
+        }
+            100%{
+          transform: translate(60px, 1000px);  
+        }
+        
+        }
+.animated:nth-of-type(1n){
+animation-name: failure;
+animation-duration: 1s;
+animation-iteration-count: 1;
+transition: ease;
+}
+.animated:nth-of-type(2n){
+animation-name:failure2;
+animation-duration: 1s;
+animation-iteration-count: 1;
+transition: ease;
+}
+.animated:nth-of-type(3n){
+    animation-name:failure3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: ease;
+}
+body{
+    overflow: hidden;
+}
+#gamemenu{
+    z-index: 1;
+    padding: 25px;
+height: 100px;
+width: 750px;
+position: absolute;
+border: 1px solid;
+border-radius: 50px;
+left: 5%;
+bottom: 5%;
+background-color: lightgreen;
+box-shadow: -10px -10px 1px darkseagreen, -11px -11px 1px black;
+}
+.btn{
+height: 50px;
+width:125px;
+border-radius: 20px;
+font-weight: bold;
+margin-left: 75px;
+box-shadow: -5px -5px 1px darkseagreen, -5px -5px 1px black;
+}
+.emptyheart{
+background-image: url("./../media/heartempty.png");
+height: 50px;
+width: 50px;
+background-size: contain;
+background-repeat: no-repeat;
+display: inline-block;
+}
+.heartcontainers{
+height: 100px;
+width: 300px;
+background-size: stretch;
+
+}
+.heartfull{
+height: 50px;
+width: 50px;  
+background-image: url("./../media/heartfull.png");  
 }
